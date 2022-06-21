@@ -2,6 +2,8 @@ package com.ahmadsCode;
 
 import java.util.Stack;
 
+//Last in, first out dataStrucuture
+
 public class WorkingWithStacks {
 
 	public static void main(String[] args) {

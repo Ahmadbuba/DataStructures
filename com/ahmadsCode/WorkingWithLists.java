@@ -3,6 +3,39 @@ package com.ahmadsCode;
 import java.util.List;
 import java.util.ArrayList;
 
+class book{
+	int isbn;
+	String name;
+	
+	public book(int isbn, String name) {
+		super();
+		this.isbn = isbn;
+		this.name = name;
+	}
+
+	public int getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(int isbn) {
+		this.isbn = isbn;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "book [isbn=" + isbn + ", name=" + name + "]";
+	}
+	
+}
+
 public class WorkingWithLists {
 
 	public static void main(String[] args) {
@@ -50,6 +83,7 @@ public class WorkingWithLists {
 		mix.add('C');
 		mix.add(1);
 		mix.add(5.40);
+		mix.add(new book(123, "StarWars"));
 		System.out.println(mix);
 		
 		// Third method of looping
